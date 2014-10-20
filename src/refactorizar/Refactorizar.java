@@ -9,9 +9,11 @@ public class Refactorizar {
         Scanner valor = new Scanner(System.in);
         int SeijasDigitos = longitudDigitos(valor);
         
+                
         boolean esPrimo = false;
         
         int contadorDigitos = 0;
+                
         if (SeijasDigitos <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
         }
@@ -65,7 +67,6 @@ public class Refactorizar {
 
     private static int longitudDigitos(Scanner valor) {
         System.out.println("Numero de digitos: ");
-        valor.hasNextInt();
         int SeijasDigitos = valor.nextInt();
         return SeijasDigitos;
     }
