@@ -1,12 +1,19 @@
 package refactorizar;
 
+import java.util.Scanner;
+
 public class Refactorizar {
 
     public static void main(String[] args) {
+        
+        Scanner valor = new Scanner(System.in);
+        System.out.println("Numero de digitos: ");
+        valor.hasNextInt();
+        int SeijasDigitos = valor.nextInt();
+        
         boolean esPrimo = false;
-        int SeijasDigitos = 0;
+        
         int contadorDigitos = 0;
-        SeijasDigitos = 2;
         if (SeijasDigitos <= 0) {
             System.out.println("Ingrese como parámetro, un numero de digitos correcto (mayor que 0): ");
         }
