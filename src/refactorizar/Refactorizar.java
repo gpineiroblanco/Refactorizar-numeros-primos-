@@ -7,9 +7,7 @@ public class Refactorizar {
     public static void main(String[] args) {
         
         Scanner valor = new Scanner(System.in);
-        System.out.println("Numero de digitos: ");
-        valor.hasNextInt();
-        int SeijasDigitos = valor.nextInt();
+        int SeijasDigitos = longitudDigitos(valor);
         
         boolean esPrimo = false;
         
@@ -63,6 +61,13 @@ public class Refactorizar {
                 }
             }
         }
+    }
+
+    private static int longitudDigitos(Scanner valor) {
+        System.out.println("Numero de digitos: ");
+        valor.hasNextInt();
+        int SeijasDigitos = valor.nextInt();
+        return SeijasDigitos;
     }
 
 }
